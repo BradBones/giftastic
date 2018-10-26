@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GifTastic</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/styles.css"/>
+	<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Charmonman:400,700|MedievalSharp|Homemade+Apple" rel="stylesheet">
+</head>
+<body>
+	
+	<!-- Bootstrap container wraps all page content -->
+	<div class="container">
+		<!-- Jumbotron contains all of the user info and input elements -->
+		<div class="jumbotron">
+			<h1>HARRY POTTER<br>GIFF MAGIC</h1>
+			<p>Click on a name to see the giffs<br>or add a name to the list!</p>
+			<br>
+			<!-- Form with a single input box to allow user to add their own button -->
+			<form id="movie-form">
+				<input type="text" id="topic-input">
+				<br>
+				<!-- Adds the user created button to the array of buttons -->
+				<input id="add-topic" type="submit" value="Submit">	  
+			</form>
+		</div>
+		
+		<!-- Lower div that contains the dynamically created buttons and the gifs pulled in via the Gify API -->
+		<div class= "row">
+			<!-- Holds the btns -->
+			<div id="button-div"></div>
+			<!-- Holds the gifs -->
+			<div id="gifDisplay"></div>
+		</div>
+	</div>
+</body>
+</html>
